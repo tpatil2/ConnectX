@@ -4,7 +4,7 @@
 // constructor provides customized dimensions and number of
 // sequential pieces (x) it takes to win the game
 ConnectX::ConnectX(int wide, int high, int x)
-{   
+{
 	//invalid input resets everything to default settings
 	if( wide <= 0 || high <= 0 || x <= 0)
 	{
@@ -21,7 +21,7 @@ ConnectX::ConnectX(int wide, int high, int x)
 		{
 			board[i][j] = EMPTY;
 		}
-	}	
+	}
 	width = wide;
 	height = high;
 	toWin = x;
@@ -105,8 +105,8 @@ Piece ConnectX::at(int w, int h)
 }
 
 // Puts the current player's piece in a vertical column, where the piece falls
-// to the lowest empty position available in the board. Placing a piece in a 
-// "bad" column (such as a column that doesn't exist or is already full of 
+// to the lowest empty position available in the board. Placing a piece in a
+// "bad" column (such as a column that doesn't exist or is already full of
 // pieces) results in the player just losing their turn
 void ConnectX::placePiece(int column)
 {

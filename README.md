@@ -2,6 +2,9 @@
  Tejas Patil
 ---------------------
 
+<img src="https://travis-ci.org/tpatil2/ConnectX.svg?branch=master"/>
+
+
 * BUG 1
 
 
